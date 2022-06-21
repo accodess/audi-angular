@@ -32,6 +32,12 @@ import { SectionsComponent } from './components/sections/sections.component';
 import { SectionComponent } from './components/section/section.component';
 import { PhotosComponent } from './components/photos/photos.component';
 import { PhotoComponent } from './components/photo/photo.component';
+import { PostsComponent } from './components/posts/posts.component';
+import { PostComponent } from './components/post/post.component';
+import { ArchivesComponent } from './components/archives/archives.component';
+import { ArchiveComponent } from './components/archive/archive.component';
+import { ElsesComponent } from './components/elses/elses.component';
+import { ElseComponent } from './components/else/else.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +54,13 @@ import { PhotoComponent } from './components/photo/photo.component';
     SectionsComponent,
     SectionComponent,
     PhotosComponent,
-    PhotoComponent
+    PhotoComponent,
+    PostsComponent,
+    PostComponent,
+    ArchivesComponent,
+    ArchiveComponent,
+    ElsesComponent,
+    ElseComponent
   ],
   imports: [
     BrowserModule,

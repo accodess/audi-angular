@@ -1,0 +1,29 @@
+<div class="container my-5">
+  <div class="bg-dark">
+    <div class="w-50 p-5 text-light">
+      <h1>Title of a longer featured blog post</h1>
+      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+      <p>Continue reading...</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+     <h3 class="fst-italic pt-5 pb-3">Daily News</h3>
+      <hr>
+      <div class="my-3" *ngFor="let post of posts">
+        <app-post
+        [title]="post.title"
+        [date]="post.date"
+        [text1]="post.text1"
+        [text2]="post.text2"
+        [text3]="post.text3">
+        </app-post>
+      </div>
+    </div>
+    <div class="col-4 ps-5">
+      <app-archives></app-archives>
+      <app-elses></app-elses>
+    </div>
+  </div>
+</div>
+

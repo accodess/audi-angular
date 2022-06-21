@@ -1,0 +1,9 @@
+<div>
+  <h4 class="fst-italic pt-5">Archives</h4>
+  <div class="p-0" *ngFor="let archive of archives">
+    <app-archive
+     [date]="archive.date"
+     [link]="archive.link">
+    </app-archive>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+  <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
+    <mdb-carousel-item *ngFor="let carousel of carousels">
+      <img [src]="carousel.image" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{carousel.title}}</h5>
+        <p>{{carousel.description}}</p>
+      </div>
+    </mdb-carousel-item>
+  </mdb-carousel>
+
+

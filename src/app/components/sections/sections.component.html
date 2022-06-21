@@ -1,0 +1,14 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="container my-3" *ngFor="let section of sections; let i = index">
+      <app-section
+        [isEven]="i % 2 === 0"
+        [text1]="section.text1"
+        [text2]="section.text2"
+        [text3]="section.text3"
+        [image]="section.image">
+      </app-section>
+    </div>
+  </div>
+</div>
+

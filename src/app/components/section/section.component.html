@@ -1,0 +1,27 @@
+
+<div class="row">
+  <ng-container *ngIf="isEven">
+  <div class="col-6">
+    <img [src]="image" class="img-fluid" alt="">
+  </div>
+  <div class="col-6">
+    <p>{{text1}}</p>
+    <p>{{text2}}</p>
+    <p>{{text3}}</p>
+  </div>
+  </ng-container>
+  <ng-container *ngIf="!isEven">
+    <div class="col-6">
+      <p>{{text1}}</p>
+      <p>{{text2}}</p>
+      <p>{{text3}}</p>
+    </div>
+    <div class="col-6">
+      <img [src]="image" class="img-fluid" alt="">
+    </div>
+  </ng-container>
+</div>
+
+<br><hr>
+
+
